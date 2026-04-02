@@ -42,6 +42,10 @@ if (db) {
 
 v1Router.get("/healthz", handlerReadiness);
 
+// app.get("/", (req, res) => {
+//   res.send("Welcome to Notely");
+// });
+
 app.use("/v1", v1Router);
 
 app.listen(config.api.port, () => {
